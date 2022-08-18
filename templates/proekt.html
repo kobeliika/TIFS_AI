@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гениратор данных о разжигании ненависти!</title>
+</head>
+<body text = 'white'
+        background="{{url_for('static',filename='F1.png')}}">
+<b><h1><center>Гениратор данных о разжигании ненависти!</center></h1></b>
+<b><h5><center>Динамически генерируемые наборы данных для улучшения обнаружения ненависти в Интернете. Первый в своем роде большой синтетический обучающий набор данных для классификации ненависти в Интернете, созданный с нуля с помощью обученных аннотаторов в ходе нескольких раундов динамического сбора данных.</center></h5></b>
+<form method="post">
+    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    <input type="submit">
+    {% if request.args.get("pred")%}
+    <h1>{{request.args.get("pred")}}</h1>
+    {% endif%}
+     <h2>Надеюсь опровдали ваши ожидания!</h2>
+<b><h3>Можете воспользоваться с Telegram http://t.me/TL_uroki_bot</h3></b>
+</form>
+</body>
+</html>
